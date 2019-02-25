@@ -5,8 +5,25 @@ body, html {
 h1 {
     color: white;
     text-align: center;
-    
+    font-family: forma-djr-banner, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 52px;
+    border-bottom: 3px solid white;
 }
+
+a {
+    text-decoration: none;
+}
+
+.center-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+  }
   
 .bg { 
     background-image: url("http://oi68.tinypic.com/rtf6gg.jpg");

@@ -22,16 +22,36 @@
     filter: grayscale(0);
     transform: scale(1.1);
 }
+
 .vertical {
     width: 375px;
-    height: 562.5px;
-    padding: 12px;
+    height: 400px;
+    padding: 6px;
 }
 
 .landscape {
     width: 375px;
     height: 250px;
-    padding: 12px;
+    padding: 6px;
+}
+
+@media screen and (max-width: 1600px) {
+    .column {
+        flex: 50%;
+        max-width: 100%;
+    }
+
+    .vertical {
+        width: 250px;
+        height: 375px;
+        padding: 6px;
+    }
+    
+    .landscape {
+        width: 250px;
+        height: 166.6px;
+        padding: 6px;
+    }
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -39,6 +59,18 @@
     .column {
         flex: 50%;
         max-width: 100%;
+    }
+
+    .vertical {
+        width: 250px;
+        height: 375px;
+        padding: 12px;
+    }
+    
+    .landscape {
+        width: 250px;
+        height: 166.6px;
+        padding: 12px;
     }
 }
 
